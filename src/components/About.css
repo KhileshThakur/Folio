@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  color: #00ff41;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Subtle Background Glow */
+.about-container::before {
+  content: "";
+  position: absolute;
+  top: 12.5%;
+  left: 50%;
+  width: 500px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(0,255,65,0.1) 0%, rgba(0,0,0,0) 70%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Faint Circuit Lines Background limited to 25% height */
+.circuit-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  background: url('/circuit-pattern.png') repeat;
+  opacity: 0.03; /* Very faint visibility */
+  animation: moveCircuit 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveCircuit {
+  0% { background-position: 0 0; }
+  100% { background-position: 150px 150px; }
+}
+
+/* Content Layout */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  z-index: 1;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.about-text h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00ff80;
+  margin-bottom: 5px;
+}
+
+/* Subheading */
+.subheading {
+  font-size: 1.2rem;
+  color: #00ff41;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #00ff41;
+  object-fit: cover;
+  filter: brightness(1.2);
+  transition: 0.3s;
+}
+
+.profile-img:hover {
+  filter: brightness(1.5);
+}
+
+/* Floating Navigation Strip */
+.bottom-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 255, 65, 0.2);
+  padding: 10px 25px;
+  border-radius: 12px;
+  display: flex;
+  gap: 22px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 255, 65, 0.3);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.3);
+}
+
+.nav-link {
+  color: #00ff41;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #00ff80;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bottom-nav {
+    gap: 15px;
+    padding: 8px 18px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
