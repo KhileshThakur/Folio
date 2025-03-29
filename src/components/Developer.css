@@ -370,8 +370,8 @@
 
   .projects-display {
     grid-template-columns: 1fr;
-    margin-top: 100px;
-    max-height: 65vh;
+    margin-top: 60px;
+    max-height: 60vh;
   }
 
   .project-card {
