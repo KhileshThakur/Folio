@@ -170,12 +170,12 @@ const Developer = () => {
             className="cartoon-img"
           />
         )}
-      </main>
 
-      {/* Selected Category Name */}
-      <div className="selected-category">
-        {selectedSkillCategory || selectedWorkCategory || "Select a Category"}
-      </div>
+        {/* Selected Category Name */}
+        <div className="selected-category">
+          {selectedSkillCategory || selectedWorkCategory || "Select a Category"}
+        </div>
+      </main>
     </div>
   );
 };

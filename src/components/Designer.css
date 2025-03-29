@@ -207,12 +207,14 @@
   
   /* Selected Category at Bottom */
   .selected-category {
-    margin-left: 100px;
+    margin: auto;
     padding: 10px;
     font-size: 1.2rem;
     text-transform: uppercase;
     text-align: center;
     color: #00ff41;
+    position: absolute;
+    bottom: 10px;
   }
   .skill-item p {
     font-size: 10px;
@@ -364,10 +366,7 @@
     .contact-icon {
       bottom: 10px;
     }
-  
-    .selected-category {
-      margin-left: 150px;
-    }
+
   
     .projects-display {
       grid-template-columns: 1fr;

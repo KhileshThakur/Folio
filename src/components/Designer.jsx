@@ -171,12 +171,12 @@ const Designer = () => {
           // />
           <h1>PAGE UNDER CONSTRUCTION</h1>
         )}
-      </main>
 
-      {/* Selected Category Name */}
-      <div className="selected-category">
-        {selectedSkillCategory || selectedWorkCategory || "Select a Category"}
-      </div>
+        {/* Selected Category Name */}
+        <div className="selected-category">
+          {selectedSkillCategory || selectedWorkCategory || "Select a Category"}
+        </div>
+      </main>
     </div>
   );
 };
