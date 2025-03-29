@@ -8,7 +8,7 @@ import { PiNotebookBold } from "react-icons/pi";
 import { MdWork } from "react-icons/md";
 import { FaHome } from "react-icons/fa";
 
-const Developer = () => {
+const Designer = () => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [workOpen, setWorkOpen] = useState(false);
   const [selectedSkillCategory, setSelectedSkillCategory] = useState(null);
@@ -38,47 +38,47 @@ const Developer = () => {
           ME AS <br /> DESIGNER
         </h2>
 
+        {/* Home Icon */}
+        <Link to="/about" className="menu-item">
+          <FaHome size={28} className="menu-icon" />
+          <span className="menu-label">Home</span>
+        </Link>
+
         {/* Skill Menu */}
-        <div className="menu-item">
-          <PiNotebookBold
-            size={30}
-            className={`menu-icon ${submenuOpen ? "active" : ""}`}
-            title="Skills"
-            onClick={() => {
-              setSubmenuOpen(!submenuOpen);
-              setWorkOpen(false); // Close Work when opening Skills
-              setSelectedWorkCategory(null); // Reset Work selection
-            }}
-          />
+        <div
+          className="menu-item"
+          onClick={() => {
+            setSubmenuOpen(!submenuOpen);
+            setWorkOpen(false);
+            setSelectedWorkCategory(null);
+          }}
+        >
+          <PiNotebookBold size={30} className="menu-icon" />
+          <span className="menu-label">Skills</span>
         </div>
 
         {/* Work Menu */}
-        <div className="menu-item">
-          <MdWork
-            size={30}
-            className={`menu-icon ${workOpen ? "active" : ""}`}
-            title="Work"
-            onClick={() => {
-              setWorkOpen(!workOpen);
-              setSubmenuOpen(false); // Close Skills when opening Work
-              setSelectedSkillCategory(null); // Reset Skills selection
-            }}
-          />
+        <div
+          className="menu-item"
+          onClick={() => {
+            setWorkOpen(!workOpen);
+            setSubmenuOpen(false);
+            setSelectedSkillCategory(null);
+          }}
+        >
+          <MdWork size={30} className="menu-icon" />
+          <span className="menu-label">Work</span>
         </div>
 
-        {/* Home Icon */}
-        <Link to="/about" className="home-icon">
-          <FaHome size={28} />
-        </Link>
-
         {/* Contact Icon */}
-        <Link to="/contact" className="contact-icon">
-          <FaEnvelope size={28} />
+        <Link to="/contact" className="menu-item">
+          <FaEnvelope size={28} className="menu-icon" />
+          <span className="menu-label">Contact</span>
         </Link>
       </aside>
 
       {/* Skill Category Menu */}
-      {submenuOpen && (
+      {/* {submenuOpen && (
         <div className="category-bar">
           {Object.keys(skillsData).map((category) => (
             <div
@@ -95,10 +95,10 @@ const Developer = () => {
             </div>
           ))}
         </div>
-      )}
+      )} */}
 
       {/* Work Category Menu */}
-      {workOpen && (
+      {/* {workOpen && (
         <div className="category-bar">
           {Object.keys(projectData).map((category) => (
             <div
@@ -115,7 +115,7 @@ const Developer = () => {
             </div>
           ))}
         </div>
-      )}
+      )} */}
 
       {/* Main Content */}
       <main className="main-content">
@@ -164,11 +164,12 @@ const Developer = () => {
             ))}
           </div>
         ) : (
-          <img
-            src="https://camo.githubusercontent.com/87af9a9fec730c94fc8b08eb21fa5ef6ab7831a67ba17bf8cc76696f6e4be1ef/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f313138373833362f73637265656e73686f74732f363533393432392f70726f6772616d65722e676966"
-            alt="Cartoon Coding"
-            className="cartoon-img"
-          />
+          // <img
+          //   src="https://camo.githubusercontent.com/87af9a9fec730c94fc8b08eb21fa5ef6ab7831a67ba17bf8cc76696f6e4be1ef/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f313138373833362f73637265656e73686f74732f363533393432392f70726f6772616d65722e676966"
+          //   alt="Cartoon Coding"
+          //   className="cartoon-img"
+          // />
+          <h1>PAGE UNDER CONSTRUCTION</h1>
         )}
       </main>
 
@@ -180,4 +181,4 @@ const Developer = () => {
   );
 };
 
-export default Developer;
+export default Designer;

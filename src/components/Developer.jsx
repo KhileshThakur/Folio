@@ -38,42 +38,42 @@ const Developer = () => {
           ME AS <br /> DEVELOPER
         </h2>
 
+        {/* Home Icon */}
+        <Link to="/about" className="menu-item">
+          <FaHome size={28} className="menu-icon" />
+          <span className="menu-label">Home</span>
+        </Link>
+
         {/* Skill Menu */}
-        <div className="menu-item">
-          <PiNotebookBold
-            size={30}
-            className={`menu-icon ${submenuOpen ? "active" : ""}`}
-            title="Skills"
-            onClick={() => {
-              setSubmenuOpen(!submenuOpen);
-              setWorkOpen(false); // Close Work when opening Skills
-              setSelectedWorkCategory(null); // Reset Work selection
-            }}
-          />
+        <div
+          className="menu-item"
+          onClick={() => {
+            setSubmenuOpen(!submenuOpen);
+            setWorkOpen(false);
+            setSelectedWorkCategory(null);
+          }}
+        >
+          <PiNotebookBold size={30} className="menu-icon" />
+          <span className="menu-label">Skills</span>
         </div>
 
         {/* Work Menu */}
-        <div className="menu-item">
-          <MdWork
-            size={30}
-            className={`menu-icon ${workOpen ? "active" : ""}`}
-            title="Work"
-            onClick={() => {
-              setWorkOpen(!workOpen);
-              setSubmenuOpen(false); // Close Skills when opening Work
-              setSelectedSkillCategory(null); // Reset Skills selection
-            }}
-          />
+        <div
+          className="menu-item"
+          onClick={() => {
+            setWorkOpen(!workOpen);
+            setSubmenuOpen(false);
+            setSelectedSkillCategory(null);
+          }}
+        >
+          <MdWork size={30} className="menu-icon" />
+          <span className="menu-label">Work</span>
         </div>
 
-        {/* Home Icon */}
-        <Link to="/about" className="home-icon">
-          <FaHome size={28} />
-        </Link>
-
         {/* Contact Icon */}
-        <Link to="/contact" className="contact-icon">
-          <FaEnvelope size={28} />
+        <Link to="/contact" className="menu-item">
+          <FaEnvelope size={28} className="menu-icon" />
+          <span className="menu-label">Contact</span>
         </Link>
       </aside>
 
