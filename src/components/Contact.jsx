@@ -114,27 +114,27 @@ const Contact = () => {
         {/* 🔗 Social Icons */}
         <div className="contact-icons">
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/khilesh-thakur-a09865228"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin size={30} className="icon linkedin" />
           </a>
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/KhileshThakur"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub size={30} className="icon github" />
           </a>
           <a
-            href="https://leetcode.com/yourleetcode"
+            href="https://leetcode.com/u/KhileshThakur"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaCode size={30} className="icon leetcode" />
           </a>
-          <a href="mailto:yourmail@gmail.com">
+          <a href="mailto:omthakur6640@gmail.com">
             <FaEnvelope size={30} className="icon gmail" />
           </a>
         </div>
