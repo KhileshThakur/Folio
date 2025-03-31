@@ -182,12 +182,12 @@
 /* Scrollbar Customization */
 .skills-display::-webkit-scrollbar,
 .projects-display::-webkit-scrollbar {
-  width: 6px;
+  width: 3px;
 }
 
 .skills-display::-webkit-scrollbar-thumb,
 .projects-display::-webkit-scrollbar-thumb {
-  background: #00ff41;
+  background: #005a17;
   border-radius: 10px;
 }
 
