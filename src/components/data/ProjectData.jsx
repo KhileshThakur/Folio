@@ -1,129 +1,93 @@
 export const projectData = {
     "Frontend App": [
       {
-        name: "Portfolio Website",
-        techStack: ["React", "CSS", "Framer Motion"],
-        image: "https://source.unsplash.com/400x300/?laptop,coding",
-        url: "https://myportfolio.com",
-        github: "https://github.com/username/portfolio",
-        description: "A beautifully animated portfolio website showcasing my skills and projects.",
+        "name": "MarvelForge",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743278215/uploads/c3nnpbstgn8yd48vseqn.png",
+        "url": "https://marvelforge.onrender.com",
+        "github": "https://github.com/KhileshThakur/MarvelForge",
+        "description": "A Marvel-themed gaming hub featuring multiple interactive games and challenges."
       },
       {
-        name: "E-Commerce UI",
-        techStack: ["Next.js", "Tailwind CSS", "Redux"],
-        image: "https://source.unsplash.com/400x300/?shopping,store",
-        url: "https://ecommerce-ui.com",
-        github: "https://github.com/username/ecommerce-ui",
-        description: "A fully responsive e-commerce frontend with a modern UI.",
+        "name": "DrumKit",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743279478/uploads/lahhlqsilcmtkovksu9e.png",
+        "url": "https://khileshthakur.github.io/DrumKit/",
+        "github": "https://github.com/KhileshThakur/DrumKit",
+        "description": "An interactive drum music player where users can click buttons or use their keyboard to play drum sounds."
       },
       {
-        name: "Crypto Dashboard",
-        techStack: ["Vue.js", "Vuetify"],
-        image: "https://source.unsplash.com/400x300/?crypto,finance",
-        url: "https://crypto-dashboard.com",
-        github: "https://github.com/username/crypto-dashboard",
-        description: "A crypto tracking dashboard with real-time price updates.",
+        "name": "Unit Converter",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743336345/uploads/cqcwlqjahpf4fmydhuk4.png",
+        "url": "https://khileshthakur.github.io/Unit_Converter/",
+        "github": "https://github.com/KhileshThakur/Unit_Converter",
+        "description": "A multi-functional unit converter for distance, temperature, area, volume, weight, and time."
       },
       {
-        name: "Blog CMS",
-        techStack: ["React", "GraphQL", "Apollo"],
-        image: "https://source.unsplash.com/400x300/?blog,writing",
-        url: "https://blogcms.com",
-        github: "https://github.com/username/blog-cms",
-        description: "A clean and intuitive blog content management system.",
+        "name": "ChatBot",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743334253/uploads/rypealqlyiibommduzgp.png",
+        "url": "https://khileshthakur.github.io/ChatBot/",
+        "github": "https://github.com/KhileshThakur/ChatBot",
+        "description": "A simple chatbot that responds to specific commands with predefined answers."
       },
       {
-        name: "Landing Page",
-        techStack: ["HTML", "CSS", "JavaScript"],
-        image: "https://source.unsplash.com/400x300/?website,design",
-        url: "https://landingpage.com",
-        github: "https://github.com/username/landing-page",
-        description: "A minimalistic landing page optimized for performance.",
+        "name": "Temperature Converter",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743334485/uploads/exzjtatshexiff0pfgyi.png",
+        "url": "https://khileshthakur.github.io/Temperature_Converter/",
+        "github": "https://github.com/KhileshThakur/Temperature_Converter",
+        "description": "A simple web app to convert temperatures between Celsius, Fahrenheit, and Kelvin."
       },
+      {
+        "name": "TextUtils",
+        "techStack": ["React"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743334834/uploads/ezun8lltkntsixbufs7j.png",
+        "url": "https://khileshthakur.github.io/TextUtils/",
+        "github": "https://github.com/KhileshThakur/TextUtils/",
+        "description": "A React-based text utility tool for formatting, analyzing, and modifying text."
+      }
+ 
     ],
     "Backend App": [
-      {
-        name: "API Server",
-        techStack: ["Node.js", "Express", "MongoDB"],
-        image: "https://source.unsplash.com/400x300/?server,backend",
-        url: "https://api-server.com",
-        github: "https://github.com/username/api-server",
-        description: "A REST API backend server handling authentication and data management.",
-      },
-      {
-        name: "Auth Service",
-        techStack: ["Node.js", "JWT", "Redis"],
-        image: "https://source.unsplash.com/400x300/?security,login",
-        url: "https://auth-service.com",
-        github: "https://github.com/username/auth-service",
-        description: "A secure authentication service using JWT and Redis.",
-      },
-      {
-        name: "GraphQL API",
-        techStack: ["GraphQL", "Apollo Server", "PostgreSQL"],
-        image: "https://source.unsplash.com/400x300/?graphql,api",
-        url: "https://graphqlapi.com",
-        github: "https://github.com/username/graphql-api",
-        description: "A GraphQL API with Apollo and PostgreSQL database.",
-      },
-      {
-        name: "File Storage Service",
-        techStack: ["Node.js", "AWS S3", "MongoDB"],
-        image: "https://source.unsplash.com/400x300/?cloud,storage",
-        url: "https://filestorage.com",
-        github: "https://github.com/username/file-storage",
-        description: "A cloud file storage service with AWS S3 integration.",
-      },
-      {
-        name: "WebSocket Chat Server",
-        techStack: ["Node.js", "WebSocket", "Redis"],
-        image: "https://source.unsplash.com/400x300/?chat,message",
-        url: "https://chatserver.com",
-        github: "https://github.com/username/chat-server",
-        description: "A real-time chat server using WebSockets and Redis.",
-      },
+      
     ],
     "Fullstack App": [
       {
-        name: "Task Manager",
-        techStack: ["React", "Node.js", "MongoDB"],
-        image: "https://source.unsplash.com/400x300/?tasks,kanban",
-        url: "https://taskmanager.com",
-        github: "https://github.com/username/task-manager",
-        description: "A full-stack task management app with authentication and real-time updates.",
+        "name": "CS Realm",
+        "techStack": ["Node.js", "Express", "MongoDB", "Pug"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743332358/uploads/dpgmhie19yizkaidwnvq.png",
+        "url": "https://cs-realm.onrender.com",
+        "github": "https://github.com/KhileshThakur/CS_Realm",
+        "description": "A library management system with CRUD operations, allowing users to book and return books, featuring separate admin and user sections."
       },
       {
-        name: "Expense Tracker",
-        techStack: ["Vue.js", "Node.js", "PostgreSQL"],
-        image: "https://source.unsplash.com/400x300/?money,expenses",
-        url: "https://expensetracker.com",
-        github: "https://github.com/username/expense-tracker",
-        description: "A full-stack expense tracker with analytics and reports.",
+        "name": "Uploader",
+        "techStack": ["React", "Node.js", "MongoDB", "Cloudinary", "Multer"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743332931/uploads/necd63dlqm4ngzqtive0.png",
+        "url": "https://uploader-frontend-td8x.onrender.com/",
+        "github": "https://github.com/KhileshThakur/Uploader-frontend",
+        "description": "A file uploader that generates shareable links using Cloudinary, built with React, Node.js, and MongoDB."
       },
       {
-        name: "E-Learning Platform",
-        techStack: ["Next.js", "Firebase", "Stripe"],
-        image: "https://source.unsplash.com/400x300/?education,learning",
-        url: "https://elearning.com",
-        github: "https://github.com/username/e-learning",
-        description: "An online learning platform with courses, quizzes, and payments.",
+        "name": "LearnIt",
+        "techStack": ["React", "Node.js", "MongoDB", "GridFS", "WebRTC", "Socket.io"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743333384/uploads/a2jmkzpfpfjv7mqbvmvh.png",
+        "url": "https://learnit-frontend.onrender.com",
+        "github": "https://github.com/KhileshThakur/learnit-frontend",
+        "description": "A learning platform with one-on-one sessions, AI chat, discussion forums, and a time capsule feature."
       },
       {
-        name: "AI Chatbot",
-        techStack: ["React", "FastAPI", "OpenAI API"],
-        image: "https://source.unsplash.com/400x300/?ai,robot",
-        url: "https://aichatbot.com",
-        github: "https://github.com/username/ai-chatbot",
-        description: "A chatbot using OpenAI API for intelligent responses.",
-      },
-      {
-        name: "Job Portal",
-        techStack: ["Angular", "Django", "PostgreSQL"],
-        image: "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/08/Empire-Flippers-an-online-business-marketplace.webp",
-        url: "https://jobportal.com",
-        github: "https://github.com/username/job-portal",
-        description: "A job portal where users can find and apply for jobs.",
-      },
+        "name": "URL Shortener",
+        "techStack": ["PHP", "HTML", "JavaScript", "jQuery", "Bootstrap"],
+        "image": "https://res.cloudinary.com/ddzua6arv/image/upload/v1743335822/uploads/tlc6srktju5bjxe0uryp.png",
+        "url": "https://github.com/KhileshThakur/URL_Shortner",
+        "github": "https://github.com/KhileshThakur/URL_Shortner",
+        "description": "A simple URL shortening tool built with PHP, jQuery, and Bootstrap."
+      }
+      
+      
     ],
   };
   

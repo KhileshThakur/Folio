@@ -1,58 +1,57 @@
-import { 
-  FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaDatabase, FaSass, FaBootstrap, FaVuejs, FaAngular, 
-  FaPhp, FaPython, FaJava, FaRust, FaLaravel, FaGitAlt, FaDocker, FaAws, FaFigma, FaCuttlefish 
-} from "react-icons/fa";
-import { SiNextdotjs, SiRedux, SiTypescript, SiTailwindcss, SiExpress, SiMongodb, SiPostgresql, 
-  SiFirebase, SiGraphql, SiKubernetes, SiDjango, SiFlask, SiSpringboot, SiCplusplus
-} from "react-icons/si";
+import { Icon } from "@iconify/react";
 
 export const skillsData = {
-  Frontend: [
-    { name: "HTML", icon: <FaHtml5 size={40} color="#E34F26" /> },
-    { name: "CSS", icon: <FaCss3 size={40} color="#1572B6" /> },
-    { name: "JavaScript", icon: <FaJs size={40} color="#F7DF1E" /> },
-    { name: "TypeScript", icon: <SiTypescript size={40} color="#3178C6" /> },
-    { name: "React", icon: <FaReact size={40} color="#61DAFB" /> },
-    { name: "Next.js", icon: <SiNextdotjs size={40} color="#000000" /> },
-    { name: "Redux", icon: <SiRedux size={40} color="#764ABC" /> },
-    { name: "Vue.js", icon: <FaVuejs size={40} color="#4FC08D" /> },
-    { name: "Angular", icon: <FaAngular size={40} color="#DD0031" /> },
-    { name: "SASS", icon: <FaSass size={40} color="#CC6699" /> },
-    { name: "Bootstrap", icon: <FaBootstrap size={40} color="#7952B3" /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss size={40} color="#38B2AC" /> },
-    { name: "Figma", icon: <FaFigma size={40} color="#F24E1E" /> }
-  ],
-  
-  Backend: [
-    { name: "Node.js", icon: <FaNodeJs size={40} color="#339933" /> },
-    { name: "Express.js", icon: <SiExpress size={40} color="#000000" /> },
-    { name: "GraphQL", icon: <SiGraphql size={40} color="#E535AB" /> },
-    { name: "Django", icon: <SiDjango size={40} color="#092E20" /> },
-    { name: "Flask", icon: <SiFlask size={40} color="#000000" /> },
-    { name: "Spring Boot", icon: <SiSpringboot size={40} color="#6DB33F" /> },
-    { name: "PHP", icon: <FaPhp size={40} color="#777BB4" /> },
-    { name: "Laravel", icon: <FaLaravel size={40} color="#FF2D20" /> },
-    { name: "Python", icon: <FaPython size={40} color="#306998" /> },
-    { name: "Java", icon: <FaJava size={40} color="#007396" /> },
-    { name: "C++", icon: <SiCplusplus size={40} color="#00599C" /> },
-    { name: "Rust", icon: <FaRust size={40} color="#000000" /> }
+  Languages: [
+    { name: "JavaScript", icon: <Icon icon="logos:javascript" width="40" height="40" /> },
+    { name: "TypeScript", icon: <Icon icon="logos:typescript-icon" width="40" height="40" /> },
+    { name: "Python", icon: <Icon icon="vscode-icons:file-type-python" width="40" height="40" /> },
+    { name: "Java", icon: <Icon icon="logos:java" width="40" height="40" /> },
+    { name: "PHP", icon: <Icon icon="logos:php" width="40" height="40" /> },
+    { name: "C++", icon: <Icon icon="devicon:cplusplus" width="40" height="40" /> },
+    { name: "C", icon: <Icon icon="devicon:c" width="40" height="40" /> },
   ],
 
-  Databases: [
-    { name: "MySQL", icon: <FaDatabase size={40} color="#00758F" /> },
-    { name: "PostgreSQL", icon: <SiPostgresql size={40} color="#336791" /> },
-    { name: "MongoDB", icon: <SiMongodb size={40} color="#47A248" /> },
-    { name: "Firebase", icon: <SiFirebase size={40} color="#FFCA28" /> },
-    { name: "SQLite", icon: <FaDatabase size={40} color="#003B57" /> },
-    { name: "Redis", icon: <FaDatabase size={40} color="#DC382D" /> },
-    { name: "DynamoDB", icon: <FaAws size={40} color="#FF9900" /> },
-    { name: "OracleDB", icon: <FaDatabase size={40} color="#F80000" /> }
+  "WebTech": [
+    { name: "HTML", icon: <Icon icon="vscode-icons:file-type-html" width="40" height="40" /> },
+    { name: "CSS", icon: <Icon icon="devicon:css3" width="40" height="40" /> },
+    { name: "React", icon: <Icon icon="logos:react" width="40" height="40" /> },
+    { name: "jQuery", icon: <Icon icon="devicon:jquery" width="40" height="40" /> },
+    { name: "Bootstrap", icon: <Icon icon="logos:bootstrap" width="40" height="40" /> },
+    { name: "Tailwind CSS", icon: <Icon icon="logos:tailwindcss-icon" width="40" height="40" /> },
+    { name: "Node.js", icon: <Icon icon="logos:nodejs-icon" width="40" height="40" /> },
+    { name: "Express.js", icon: <Icon icon="skill-icons:expressjs-dark" width="40" height="40" /> },
+    { name: "Spring Boot", icon: <Icon icon="logos:spring-icon" width="40" height="40" /> },
+    { name: "Pug", icon: <Icon icon="material-icon-theme:pug" width="40" height="40" /> },
+    { name: "JWT", icon: <Icon icon="logos:jwt-icon" width="40" height="40" /> },
+    { name: "Socket.io", icon: <Icon icon="logos:socket-io" width="40" height="40" /> },
+    { name: "Postman", icon: <Icon icon="devicon:postman" width="40" height="40" /> },
+    { name: "Vite", icon: <Icon icon="logos:vitejs" width="40" height="40" /> },
+    { name: "npm", icon: <Icon icon="logos:npm-icon" width="40" height="40" /> },
+    { name: "yarn", icon: <Icon icon="material-icon-theme:yarn" width="40" height="40" /> },
+    { name: "Mongoose", icon: <Icon icon="devicon:mongoose" width="40" height="40" /> }
   ],
 
-  DevOps: [
-    { name: "Git", icon: <FaGitAlt size={40} color="#F05032" /> },
-    { name: "Docker", icon: <FaDocker size={40} color="#2496ED" /> },
-    { name: "Kubernetes", icon: <SiKubernetes size={40} color="#326CE5" /> },
-    { name: "AWS", icon: <FaAws size={40} color="#FF9900" /> }
+  "Database & QA": [
+    { name: "MySQL", icon: <Icon icon="logos:mysql" width="40" height="40" /> },
+    { name: "PostgreSQL", icon: <Icon icon="logos:postgresql" width="40" height="40" /> },
+    { name: "MongoDB", icon: <Icon icon="devicon:mongodb" width="40" height="40" /> },
+    { name: "Firebase", icon: <Icon icon="logos:firebase" width="40" height="40" /> },
+    { name: "SQLite", icon: <Icon icon="skill-icons:sqlite" width="40" height="40" /> },
+    { name: "Jmeter", icon: <Icon icon="simple-icons:apachejmeter" width="40" height="40"  style={{color: "#fff"}} />},
+    { name: "Junit", icon: <Icon icon="devicon:junit" width="40" height="40" />}
+  ],
+
+  "DevOps": [
+    { name: "Git", icon: <Icon icon="material-icon-theme:git" width="40" height="40" /> },
+    { name: "GitHub", icon: <Icon icon="mage:github" width="40" height="40"  style={{color: "#fff"}} /> },
+    { name: "Docker", icon: <Icon icon="logos:docker-icon" width="40" height="40" /> },
+    { name: "Kubernetes", icon: <Icon icon="logos:kubernetes" width="40" height="40" /> },
+    { name: "AWS", icon: <Icon icon="logos:aws" width="40" height="40" /> },
+    { name: "Linux", icon: <Icon icon="flat-color-icons:linux" width="40" height="40" />},
+    { name: "Render", icon: <Icon icon="simple-icons:render" width="40" height="40"  style={{color: "#fff"}} /> },
+    { name: "Vercel", icon: <Icon icon="vscode-icons:file-type-vercel" width="40" height="40" /> },
+    { name: "Netlify", icon: <Icon icon="vscode-icons:file-type-netlify" width="40" height="40" /> },
+    { name: "Jenkins", icon: <Icon icon="logos:jenkins" width="40" height="40" /> },
+    { name: "Xampp", icon: <Icon icon="logos:xampp" width="40" height="40" />}
   ]
 };

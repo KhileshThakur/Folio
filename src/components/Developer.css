@@ -218,8 +218,9 @@
 }
 
 .skill-item p {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 1px;
+  font-family: monospace;
 }
 
 
@@ -376,10 +377,14 @@
 
   .project-card {
     padding: 15px;
-    height: 300px;
+    height: max-content;
   }
 
   .project-img {
     height: 150px;
+  }
+
+  .skill-item p {
+    font-size: 10px;
   }
 }
