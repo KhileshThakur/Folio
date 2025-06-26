@@ -13,6 +13,7 @@ const Developer = () => {
   const [workOpen, setWorkOpen] = useState(false);
   const [selectedSkillCategory, setSelectedSkillCategory] = useState(null);
   const [selectedWorkCategory, setSelectedWorkCategory] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   // Close menus when clicking outside
   useEffect(() => {
@@ -121,45 +122,34 @@ const Developer = () => {
       <main className="main-content">
         {/* Skills Section */}
         {selectedSkillCategory && !selectedWorkCategory ? (
-          <div className="skills-display">
+          <div className="skills-tags">
             {skillsData[selectedSkillCategory].map((skill, index) => (
-              <div key={index} className="skill-item">
+              <div key={index} className="skill-tag">
                 {skill.icon}
-                <p>{skill.name}</p>
+                <span>{skill.name}</span>
               </div>
             ))}
           </div>
         ) : selectedWorkCategory ? (
           /* Work Section */
-          <div className="projects-display">
+          <div className="projects-grid">
             {projectData[selectedWorkCategory].map((project, index) => (
-              <div key={index} className="project-card">
+              <div key={index} className="project-row">
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="project-img"
+                  className="project-thumb"
                 />
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-                <span className="tech-stack">
-                  {project.techStack.join(", ")}
-                </span>
-                <div className="project-links">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
+                <div className="project-info">
+                  <h4>{project.name}</h4>
+                  <p>{project.techStack.join(", ")}</p>
                 </div>
+                <button
+                  className="details-btn"
+                  onClick={() => setSelectedProject(project)}
+                >
+                  More
+                </button>
               </div>
             ))}
           </div>
@@ -175,6 +165,42 @@ const Developer = () => {
         <div className="selected-category">
           {selectedSkillCategory || selectedWorkCategory || "Select a Category"}
         </div>
+        {selectedProject && (
+          <div
+            className="project-modal"
+            onClick={() => setSelectedProject(null)}
+          >
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.name}
+                className="modal-img"
+              />
+              <h2>{selectedProject.name}</h2>
+              <p>{selectedProject.description}</p>
+              <strong>Tech Stack:</strong>
+              <p>{selectedProject.techStack.join(", ")}</p>
+              <div className="project-links">
+                <a href={selectedProject.url} target="_blank" rel="noreferrer">
+                  Live
+                </a>
+                <a
+                  href={selectedProject.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+              <button
+                className="close-btn"
+                onClick={() => setSelectedProject(null)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );
